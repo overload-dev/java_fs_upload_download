@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<!-- DEFAULT FORM -->
+	<definition name="tiles_default" template="/WEB-INF/views/layout/layout_default.jsp">
+		<put-attribute name="title" value="Overload - TILES"/>
+		<put-attribute name="header" value=""/>
+		<put-attribute name="content" value=""/>
+		<put-attribute name="page_js" value=""/>
+		<!-- <put-attribute name="footer" value=""/> -->
+	</definition>
+	
+	<!-- HOME -->
+	<definition name="view.overload.home" extends="tiles_default">
+		<put-attribute name="header"  value="/WEB-INF/views/layout/header.jsp" />
+    	<put-attribute name="content" value="/WEB-INF/views/home/home.jsp" />
+    	<put-attribute name="page_js" value="/WEB-INF/views/home/home_js.jsp" />
+    	<!-- <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp"/> -->
+	</definition>
+	
+	
+</tiles-definitions>
